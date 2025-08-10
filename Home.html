@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Explorer - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="Home.html">Home</a>
+    <a href="About.html">About Us</a>
+    <a href="Contact.html">Contact Us</a>
+  </nav>
+
+  <header>
+    <h1>Welcome to Travel Explorer</h1>
+    <p>Your personalized guide to the best travel destinations!</p>
+  </header>
+
+  <section>
+    <h2>Beach Recommendations</h2>
+    <div class="card">
+      <img src="beach1.jpeg" alt="Beach 1">
+      <p>Sunny Beach Paradise</p>
+    </div>
+    <div class="card">
+      <img src="beach2.jpeg" alt="Beach 2">
+      <p>Blue Lagoon Escape</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Temple Recommendations</h2>
+    <div class="card">
+      <img src="temple1.jpeg" alt="Temple 1">
+      <p>Ancient Serenity Temple</p>
+    </div>
+    <div class="card">
+      <img src="temple2.jpeg" alt="Temple 2">
+      <p>Golden Peace Pagoda</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Recommendations by Country</h2>
+    <select id="countrySelect" onchange="showCountryRecommendations()">
+      <option value="">Select a Country</option>
+      <option value="japan">Japan</option>
+      <option value="maldives">Maldives</option>
+    </select>
+    <div id="countryResults"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
